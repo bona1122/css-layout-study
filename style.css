@@ -1,7 +1,10 @@
 body {
   display: flex;
-  gap: 10px;
+  height: 100vh;
   flex-direction: row; /* 기본값 */
+  gap: 10px;
+  justify-content: space-between; /* justify-content: 주축에서 아이템을 이동 */
+  align-items: center;
 }
 
 .box {
@@ -11,9 +14,11 @@ body {
   display: inline-block;
   color: white;
   font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* flexbox를 사용하면, 개별 열을 신경 쓸 필요없다
-  그리고 하드코딩을 하며 간격을 맞추지 않아도된다. 
 
-  1규칙: 자식요소가 아닌, "직속" 부모요소를 통해 조정한다.
-*/
+
+
+
