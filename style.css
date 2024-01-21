@@ -1,11 +1,16 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 .father {
   display: flex;
   height: 100vh;
   justify-content: center;
+  flex-direction: column;
 }
 
 .box {
-  height: 200px;
+  height: 400px;
   color: white;
   font-size: 36px;
   display: flex;
@@ -15,11 +20,7 @@
 
 .box:first-child {
   background-color: tomato;
-  /* 아래 3개의 조합이 자주 사용됨. */
-  /* flex-grow: 0;
-  flex-shrink: 5;
-  flex-basis: 500px; */ /* flex-basis와 width의 차이는? 전자는 주축을 따른다! */
-  flex: 0 5 500px; /* 위의 3개를 줄여서 쓸 수 있음. */
+  flex: 1 0 500px;
 }
 .box:last-child {
   background-color: teal;
