@@ -6,7 +6,6 @@
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
-  align-content: center; /* 다중라인 컨테이너를 다룰 때만 필요한 속성. 라인의 위치를 바꿈! */
 }
 
 .box {
@@ -19,3 +18,20 @@
   justify-content: center;
   align-items: center;
 }
+
+.box:first-child{
+  align-self: flex-start;
+}
+
+.box:last-child{
+  align-self: flex-end;
+}
+
+/* .box:nth-child(3){
+  background-color: blueviolet;
+  order: 2; 컨테이너의 자식들에 부여할 수 있는 속성. 기본 0. -> 반응형 디자인 시, 유용하게 쓰임 
+}
+.box:nth-child(6){
+  background-color: aqua;
+  order: -1;
+} */
