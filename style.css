@@ -1,17 +1,10 @@
 .father {
   display: flex;
   height: 100vh;
-  row-gap: 10px;
-  column-gap: 20px;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-items: center;
 }
 
 .box {
-  width: 200px;
   height: 200px;
-  background-color: tomato;
   color: white;
   font-size: 36px;
   display: flex;
@@ -19,19 +12,18 @@
   align-items: center;
 }
 
-.box:first-child{
-  align-self: flex-start;
+.box:first-child {
+  background-color: tomato;
+  flex-grow: 1;
+  flex-shrink: 3; /* 숫자가 높을수록 축소되는 속도 빨라짐 */
 }
-
-.box:last-child{
-  align-self: flex-end;
+.box:nth-child(2) {
+  background-color: orange;
+  flex-grow: 2;
+  flex-shrink: 0;
 }
-
-/* .box:nth-child(3){
-  background-color: blueviolet;
-  order: 2; 컨테이너의 자식들에 부여할 수 있는 속성. 기본 0. -> 반응형 디자인 시, 유용하게 쓰임 
+.box:last-child {
+  background-color: teal;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
-.box:nth-child(6){
-  background-color: aqua;
-  order: -1;
-} */
