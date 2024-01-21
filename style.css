@@ -1,18 +1,18 @@
 .father {
   display: flex;
   height: 100vh;
-  gap: 10px;
-  justify-content: flex-start;
-  /* flex-wrap: wrap; flex-wrap은 컨테이너가 한줄인지 다중라인인지 정함 
-  flex-direction: row;  */
-  flex-flow: row wrap; /* flex-flow는 flex-direction과 flex-wrap을 한번에 정의 */
+  row-gap: 10px;
+  column-gap: 20px;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center; /* 다중라인 컨테이너를 다룰 때만 필요한 속성. 라인의 위치를 바꿈! */
 }
 
 .box {
   width: 200px;
   height: 200px;
   background-color: tomato;
-  display: inline-block;
   color: white;
   font-size: 36px;
   display: flex;
