@@ -1,10 +1,11 @@
-body {
+.father {
   display: flex;
   height: 100vh;
-  flex-direction: row; /* 기본값 */
   gap: 10px;
-  justify-content: space-between; /* justify-content: 주축에서 아이템을 이동 */
-  align-items: center;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; flex-wrap은 컨테이너가 한줄인지 다중라인인지 정함 
+  flex-direction: row;  */
+  flex-flow: row wrap; /* flex-flow는 flex-direction과 flex-wrap을 한번에 정의 */
 }
 
 .box {
@@ -18,7 +19,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-
-
-
