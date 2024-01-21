@@ -1,0 +1,14 @@
+$bgColor: tomato; /* scss 변수 */
+
+:root {
+  --bg-color: red; /* css 변수 */
+}
+
+body {
+  background-color: $bgColor;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* SASS, SCSS */
